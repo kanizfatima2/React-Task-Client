@@ -21,12 +21,12 @@ export const router = createBrowserRouter([
             {
                 path: '/allTask',
                 element: <AllTask></AllTask>,
-                loader: () => fetch(`http://localhost:5000/AddedFormData`)
+                loader: () => fetch(`https://react-task-server.vercel.app/AddedFormData`)
             },
             {
                 path: '/SingleTask/:id',
                 element: <SingleTask></SingleTask>,
-                loader: ({ params }) => fetch(`http://localhost:5000/AddedFormData/${params.id}`)
+                loader: ({ params }) => fetch(`https://react-task-server.vercel.app/AddedFormData/${params.id}`)
             }
 
 

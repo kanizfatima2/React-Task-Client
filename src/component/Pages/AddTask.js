@@ -7,7 +7,7 @@ const AddTask = () => {
 
     const handleInformation = (data, e) => {
         console.log(data);
-        fetch("http://localhost:5000/AddedFormData", {
+        fetch("https://react-task-server.vercel.app/AddedFormData", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
